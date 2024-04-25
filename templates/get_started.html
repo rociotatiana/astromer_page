@@ -1,0 +1,215 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="space2">
+        <img src="/static/img/ASTROMER-w.png">
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Get Started</h2>
+  <p>ASTROMER is a Transformer-based model that creates light curves representations. It was pre-trained in a
+    self-supervised manner, requiring no human-labeled data. We used millions of R-band light sequences to adjust the
+    ASTROMER weights. The learned representation can be easily adapted to other surveys by re-training ASTROMER
+    on new sources. Read the <a href="https://arxiv.org/pdf/2205.01677.pdf">paper</a> for a deeper understanding.</p>
+</div>
+<br />
+<div class="container">
+  <h2>Install our library</h2>
+  <p>Install our python library including all the functionalities:</p>
+  <code>pip install ASTROMER</code>
+</div>
+<br />
+<div class="container hidden-mobile">
+  <h2>Pre-trained Weights</h2>
+  <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Version tag</th>
+        <th scope="col">Pretraining Data</th>
+        <th scope="col">Description</th>
+        <th scope="col">RMSE/R-Square</th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">v0</th>
+        <td>MACHO</td>
+        <td>Paper's model</td>
+        <td>0.147/0.80</td>
+        <td><a
+          href="https://github.com/astromer-science/weights/raw/nightly/macho_0.zip">Download weights</a></td>
+      </tr>
+      <tr>
+        <th scope="row">v1</th>
+        <td>MACHO</td>
+        <td>New implementation of the paper's model</td>
+        <td>0.173/0.72</td>
+        <td><a
+          href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download weights</a></td>
+      </tr>
+      <tr>
+        <th scope="row">v1c(*)</th>
+        <td>MACHO Clean</td>
+        <td>Paper's model</td>
+        <td>0.064/0.83</td>
+        <td><a
+          href="https://github.com/astromer-science/weights/raw/nightly/macho_1c.zip">Download weights</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>(*) Best performance on clasiffication task</p>
+</div>
+<br />
+
+<div class="container show-mobile">
+  <h2>Pre-trained Weights</h2>
+  <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          v0. MACHO
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Description:</strong> Paper's model
+          <br>
+          <strong>Test RMSE:</strong> 0.147
+          <br>
+          <strong>Test R-Square:</strong> 0.80
+          <br>
+          <strong>Link:</strong> <a
+          href="https://github.com/astromer-science/weights/raw/nightly/macho_0.zip">Download weights</a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          v1. MACHO
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Description:</strong> New implementation of the paper's model
+          <br>
+          <strong>Test RMSE:</strong> 0.173
+          <br>
+          <strong>Test R-Square:</strong> 0.72
+          <br>
+          <strong>Link:</strong> <a
+          href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download weights</a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          v1c(*) MACHO Clean
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Description:</strong> New implementation of the paper's model trained on Clean MACHO
+          <br>
+          <strong>Test RMSE:</strong> 0.064
+          <br>
+          <strong>Test R-Square:</strong> 0.83
+          <br>
+          <strong>Link:</strong> <a
+          href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download weights</a>        </div>
+      </div>
+    </div>
+  </div>
+  <p>(*) Best performance on clasiffication task</p>
+</div>
+
+<div class="container">
+
+  <h2>Basic Tutorials</h2>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="/static/img/preparing_data.png" class="card-img-top" alt="...">
+        <div class="card-body rounded-9">
+          <h5 class="card-title">Preparing Data</h5>
+          <p class="card-text">Either numpy or tf.records, here you will learn how to format your own data to fit ASTROMER's requirements</p>
+          <br>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="/static/img/finetuning.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Finetuning</h5>
+          <p class="card-text">Finetune ASTROMER using your own dataset.</p>
+          <br>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="/static/img/training.png" class="card-img-top" alt="..." width="300">
+        <div class="card-body">
+          <h5 class="card-title">Training</h5>
+          <p class="card-text">Have a lot of samples? Here we teach you how to train ASTROMER from scratch.</p>
+          <br>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br />
+<br />
+
+<div class="container">
+
+  <h2>Tasks Tutorials</h2>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tutorial 1: Classification</h5>
+          <p class="card-text">Classification of variable stars from Ogle's catalog using the pre-trained model on MACHO
+            dataset</p>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tutorial 2: Regression</h5>
+          <p class="card-text">Predicting physical parameters from GAIA light curves representations.</p>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

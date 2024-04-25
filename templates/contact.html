@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h5>Email us:</h5>
+            <p>pavlos@seas.harvard.edu</p>
+            <p>cridonoso@inf.udec.cl</p>
+            <h5>Address:</h5>
+            <a href="https://goo.gl/maps/GMKQnV4LsEbwrw2i8">
+                Science and Engineering Complex, 150 Western Ave, Boston, MA 02134.
+            </a>
+            <br>
+            <br>
+        </div>
+        <div class="col-sm-8">
+            <form>
+                <div class="mb-3">
+                    <h5>General Inquiries</h5>
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your e-mail here">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Issue</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
