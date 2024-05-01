@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -11,16 +11,16 @@ def get_started():
 def about():
     return render_template('about.html')
 
-@app.route('/documentation', endpoint='documentation')
-def documentation():
-    return render_template('documentation.html')
+@app.route('/tutorials', endpoint='tutorials')
+def tutorials():
+    return render_template('tutorials.html')
 
 @app.route('/team', endpoint='team')
 def team():
     return render_template('team.html')
 
-@app.route('/contact', endpoint='contact')
-def team():
+@app.route('/contact', endpoint='contact', methods = ["GET", "POST"])
+def contact():
     return render_template('contact.html')
 
 

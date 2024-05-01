@@ -12,6 +12,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-display: optional;
 }
 
 body {
@@ -36,8 +37,9 @@ header, footer {
 }
 
 p {
-  color: #5c6b7a;
-  font-size: 19px;
+  color: #404c58;
+  font-size: 20px;
+  line-height: 2rem;
 }
 
 button {
@@ -65,6 +67,20 @@ code {
     padding: 20px;
   }
 
+  .code-doc {
+    font-family: Consolas,"courier new";
+    background-color: #f1f1f1;
+    border-inline-color: #5c6b7a;
+    padding: 2px;
+    font-size: 100%;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  ul, li {
+    list-style-type: none;
+  }
+  
   .container-fluid {
     display: flex; 
     align-items: center; 

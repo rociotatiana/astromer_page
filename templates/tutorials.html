@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Install our library</h2>
+    <p>Install our python library including all the functionalities:</p>
+    <code>pip install ASTROMER</code>
+  </div>
+  <br />
+  
+  <div class="container">
+  
+    <h2>Explore the model</h2>
+    <br />
+  
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body rounded-9">
+            <h3 class="card-title">Prepare your data</h3>
+            <img src="/static/img/preparing_data.png" class="card-img-top" alt="...">
+            <p class="card-text">Either numpy or tf.records, here you will learn how to format your own data to fit
+              ASTROMER's requirements</p>
+            <br>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Finetune your model</h3>
+            <img src="/static/img/finetuning.png" class="card-img-top" alt="...">
+            <p class="card-text">Finetune ASTROMER using your own dataset.</p>
+            <br>
+            <br>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Learn how to train it</h3>
+            <img src="/static/img/training.png" class="card-img-top" alt="..." width="300">
+            <p class="card-text">Have a lot of samples? Here we teach you how to train ASTROMER from scratch.</p>
+            <br>
+            <br>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <br />
+  <br />
+  
+  <div class="container">
+  
+    <h2>Tasks Tutorials</h2>
+    <br />
+  
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tutorial 1: Classification</h5>
+            <p class="card-text">Classification of variable stars from Ogle's catalog using the pre-trained model on MACHO
+              dataset</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tutorial 2: Regression</h5>
+            <p class="card-text">Predicting physical parameters from GAIA light curves representations.</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+{% endblock content%}
