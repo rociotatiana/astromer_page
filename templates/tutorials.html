@@ -1,90 +1,60 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<div class="top-bar">
+    <div class="container">
+        <h1>Tutorials</h1>
+    </div>
+</div>
+<br>
 <div class="container">
-    <h2>Install our library</h2>
+    <h2>Install ASTROMER</h2>
+    <p>ASTROMER is tested and supported on the following 64-bit systems:</p>
+    <li>Python 3.8</li>
+    <br>
     <p>Install our python library including all the functionalities:</p>
-    <code>pip install ASTROMER</code>
-  </div>
-  <br />
-  
-  <div class="container">
-  
-    <h2>Explore the model</h2>
-    <br />
-  
+    <p class="code">pip install ASTROMER</p>
+</div>
+<br><br>
+<div class="container">
+    <h2>Explore ASTROMER</h2>
+
+    <p>The following tutorials were made for you to make a better understanding of the nature of it.</p>
+    <br>
     <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body rounded-9">
-            <h3 class="card-title">Prepare your data</h3>
-            <img src="/static/img/preparing_data.png" class="card-img-top" alt="...">
-            <p class="card-text">Either numpy or tf.records, here you will learn how to format your own data to fit
-              ASTROMER's requirements</p>
-            <br>
-            <button>Learn more</button>
-          </div>
+        <div class="col sm-6 d-flex align-items-stretch text-center">
+            <div class="card">
+                <div class="card-body rounded-9">
+                    <h5 class="card-title">Tutorial 1: Prepare your data</h5>
+                    <br>
+                    <p class="card-text">Either numpy or tf.records, here you will learn how to format your own data
+                        to fit ASTROMER's requirements.</p>
+                        <br><br>
+                        <div class="card-btn"><button>Learn more</button></div>
+                    </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">Finetune your model</h3>
-            <img src="/static/img/finetuning.png" class="card-img-top" alt="...">
-            <p class="card-text">Finetune ASTROMER using your own dataset.</p>
-            <br>
-            <br>
-            <button>Learn more</button>
-          </div>
+
+        <div class="col sm-6 d-flex align-items-stretch text-center text-center">
+            <div class="card">
+                <div class="card-body rounded-9">
+                    <h5 class="card-title">Tutorial 2: Finetune your model</h5>
+                    <br>
+                    <p class="card-text">With the pre-trained weights you can finetune ASTROMER using your own dataset.
+                    </p>
+                    <br><br>
+
+                    <div class="card-btn"><button>Learn more</button></div>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">Learn how to train it</h3>
-            <img src="/static/img/training.png" class="card-img-top" alt="..." width="300">
-            <p class="card-text">Have a lot of samples? Here we teach you how to train ASTROMER from scratch.</p>
-            <br>
-            <br>
-            <button>Learn more</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  
-  
-  <br />
-  <br />
-  
-  <div class="container">
-  
-    <h2>Tasks Tutorials</h2>
-    <br />
-  
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tutorial 1: Classification</h5>
-            <p class="card-text">Classification of variable stars from Ogle's catalog using the pre-trained model on MACHO
-              dataset</p>
-            <button>Learn more</button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tutorial 2: Regression</h5>
-            <p class="card-text">Predicting physical parameters from GAIA light curves representations.</p>
-            <button>Learn more</button>
-          </div>
-        </div>
-      </div>
-  
-    </div>
+</div>
+
+
+<br />
+<br />
+
+
+</div>
 {% endblock content%}

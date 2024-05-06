@@ -1,52 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&family=Reddit+Mono:wght@200..900&family=Roboto&display=swap'); */
-
-
 /* GLOBALS */
+:root {
+  --first-base-color: #f3f3f3;
+  --second-base-color: whitesmoke;
+  --pop-color: #a61c30;
+  --action-color: #ff0000;
+}
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  font-family: "Kumbh Sans",sans-serif;
+
 }
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: optional;
-}
+
 
 body {
   background-color: #f3f3f3;
-} 
+}
 
-header, footer {
+header,
+footer {
   background-color: #f3f3f3;
-  color: #951e1a;
+  color: var(--pop-color);
   text-align: center;
   padding: 5px 5px;
 
 
 }
-/*h1, h2, h3, h4, h5 {
-  font-family: "Roboto", sans-serif;
+
+.start-btn {
+  margin: 10px 10px 10px 10px;
+  font-size: 125%;
   font-weight: 600;
-  font-style: normal;
-} */
+  color: whitesmoke;
+  background-color: var(--pop-color);
+  outline-color: var(--pop-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.footer-img {
+  max-width: 350px;
+}
+
+.top-bar {
+  background: url('/static/img/banner.png') center;
+  margin: 0px 0px 20px 0px;
+  padding: 15px;
+  text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: 500;
+
+  font-size: 2rem;
+  margin: 35px 0px 25px 0px;
+  color: #264666;
+}
+
+h1 {
+  color: whitesmoke;
+  margin: 25px 0px 25px 0px;
+  font-size: 2.5rem;
+
+
+}
 .col {
   padding: 10px;
+  margin: 10px;
 }
+
+.grid-tutorial {
+  display: grid;
+  gap: 1em;
+  /* 3 rows across, equal widths */
+  grid-template-columns: repeat(2, 1fr);
+  /* all rows should take the height of the tallest content */
+  grid-auto-rows: 1fr;
+}
+
 
 p {
   color: #404c58;
   font-size: 20px;
   line-height: 2rem;
+  text-align: center;
 }
 
 button {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  padding: 7px 13px;
-  background-color: #951e1a;
+  padding: 7px 13px; 
+  background-color: var(--pop-color);
   color: whitesmoke;
   border: none;
   border-radius: 6px;
@@ -54,67 +106,109 @@ button {
   transition: all 0.3s ease 0s;
 }
 
+.card-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 37%;
+}
+
 a {
-  font-size: 18px;
-  color: #951e1a;
-} 
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--pop-color);
+}
 
-code {
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 17px;
-    color: #951e1a;
-    padding: 20px;
-  }
+.code {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 17px;
+  color: var(--pop-color);
+  padding: 20px;
+  text-align: center;
+}
+.card-code {
+  align-content: stretch;
+  size: inherit;
+}
 
-  .code-doc {
-    font-family: Consolas,"courier new";
-    background-color: #f1f1f1;
-    border-inline-color: #5c6b7a;
-    padding: 2px;
-    font-size: 100%;
-    font-weight: 400;
-    text-decoration: none;
-  }
+ul,
+li {
+  /*list-style-type: none; */
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: "Kumbh Sans",sans-serif;
+  list-style-type: none;
+  text-align: center;
+  color: #404c58;
 
-  ul, li {
-    list-style-type: none;
-  }
-  
-  .container-fluid {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    max-width: 1296px; 
-    width: 100%; 
-    margin: 0 auto; 
+
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 
 .card {
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.card-tutorial {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.card-team {
+  max-width: 300px;
+  min-width: 148px;
 } 
+
+.card-title {
+  text-align: center;
+}
+
+.card-body {
+  display: inline;
+}
 
 /* HOVER CHANGES */
 
 a:hover {
 
   color: #ff0000;
-} 
+}
 
 button:hover {
   background-color: #ff0000;
 
 }
 
+.start-btn:hover {
+  margin: 10px 10px 10px 10px;
+  font-size: 125%;
+  font-weight: 600;
+  color: #f3f3f3;
+  background-color: #ff0000;
+  outline-color: #ff0000;
+  /*background-image: linear-gradient(to top right, #a61c30,#ff0000); */
+
+
+}
 
 /* NAVBAR */
 
 nav {
-  font-size: 17px;
+  font-size: 18px;
 }
+
 .nav-link {
-  color: #951e1a;
+  color: var(--pop-color);
 }
 
 .nav-link:hover {
@@ -122,81 +216,103 @@ nav {
 }
 
 #nav-toggle-btn {
-  border-color: #951e1a;
-  
+  border-color: var(--pop-color);
+
 }
+
 .navbar-brand {
-align-items: end;
-flex: 0 0 33.333%;
-max-width: 33.333%; 
+  align-items: end;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
 }
 
-#navbarScroll {
-flex: 0 0 66.666%; 
-max-width: 66.666%; 
+#navbarSupportedContent {
+  align-items: end;
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
 }
-
 
 .about-astromer {
-  width: 100%;
+
+  width: 60%;
   height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
+
 /*
 HOME INITIAL BOX
 */
-.space2{
 
-	/* Pass a comma separated list of backgrounds: */
-	background:url('/static/img/galaxy2.jpg') repeat bottom right;
+.mx-auto{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+.space2 {
 
-	width:100%;
-	height:auto;
-	margin: 0 auto;
+  /* Pass a comma separated list of backgrounds: */
+  background: url('/static/img/galaxy.jpg') repeat bottom right;
 
-	border-radius:30px;
+  width: 500px;
+  height: 500px;
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+  border-radius: 100%;
 
-	/* Animate the positions of both of the backgrounds */
-	transition:background-position 2s;
+
+  /* Animate the positions of both of the backgrounds */
+  transition: background-position 2s;
 }
 
-.space2:hover{
-	/* The same goes for properties like background-position and repeat */
-	background-position:40% 10px, top right;
+.space2:hover {
+  /* The same goes for properties like background-position and repeat */
+  background-position: 40% 10px, top right;
 }
 
 /*
 BREAK POINTS
 */
 
-@media screen and (max-width:1230px){
+@media screen and (max-width:1230px) {
   .space {
     display: none;
   }
-} 
+}
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
 
-  .space2 img, .front img {
-    width:100%;
-    height: auto;
+  .space2 {
+    border-radius: 0%;
 
   }
-} 
+  .space2 img,
+  .front img {
+    width: 100%;
+    height: auto;
+  }
+}
 
-@media screen and (max-width:515px){
+@media screen and (max-width:515px) {
   .hidden-mobile {
     display: none;
   }
-} 
+}
 
-@media screen and (min-width:515px){
+@media screen and (min-width:515px) {
   .show-mobile {
     display: none;
   }
-} 
-/*
-#19946E    verde
-#195D94    azul lindo
-#691512     shade of burdeo
-#470E0C     shade of burdeo
-*/
+}
+
+@media screen and (max-width:515px) {
+  .grid {
+    display: block;
+  }
+}
+/*.accordion-item {
+  padding: auto;
+  margin: 0 0 0 0;
+} */

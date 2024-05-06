@@ -2,26 +2,25 @@
 
 {% block content %}
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="space2">
-        <img src="/static/img/ASTROMER-w.png">
+
+<br>
+      <div class="space2 d-flex align-items-center">
+        <img src="/static/img/ASTROMER-w.png" width="400px" class="mx-auto">
+
       </div>
-    </div>
-  </div>
-</div>
+
 <br>
 <div class="container">
-
       <h2>Get Started</h2>
       <p>ASTROMER is a Transformer-based model that creates light curves representations. The learned representation can be easily adapted to other surveys by re-training ASTROMER
         on new sources. Read the <a href="https://arxiv.org/pdf/2205.01677.pdf">paper</a> for a deeper understanding.
       </p>
-      <div class="container justify-content-center">
-      <button type="button" class="btn btn-primary btn-lg">View Tutorials</button>
-      <button type="button" class="btn btn-primary btn-lg">About ASTROMER</button>
-      <button type="button" class="btn btn-primary btn-lg">Read the Docs</button>
+      <br>
+      <br>
+    <div style="text-align: center;">
+      <a href="{{ url_for('tutorials') }}"><button type="button" class="start-btn">View Tutorials ❯ </button></a>
+      <a href="{{ url_for('about') }}"><button type="button" class="start-btn">About ASTROMER ✖ </button> </a>
+      <a href="https://astromer.readthedocs.io/en/main/"><button type="button" class="start-btn">Read the Docs ✒ </button> </a>
     </div>
 </div>
 

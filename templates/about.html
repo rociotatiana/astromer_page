@@ -1,12 +1,17 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<div class="top-bar">
+    <div class="container">
+        <h1>About ASTROMER</h1>
+    </div>
+</div>
 <div class="container">
     <h3>ASTROMER Architecture</h3>
-    ASTROMER's architecture is based on the Transformer architecture proposed in Vaswani (2017).
+    <p>ASTROMER's architecture is based on the Transformer architecture proposed in Vaswani (2017).</p>
     <br>
     <br>
-    <div class="container-fluid"><img class="about-astromer" src="/static/img/astro_arch.png"></div>
+    <div class="container"><img class="mx-auto about-astromer" src="/static/img/astro_arch.png" width="100px"></div>
     <div class="container hidden-mobile">
         <h2>Pre-trained Weights</h2>
         <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
@@ -26,21 +31,21 @@
               <td>MACHO</td>
               <td>Paper's model</td>
               <td>0.147/0.80</td>
-              <td><a href="https://github.com/astromer-science/weights/raw/nightly/macho_0.zip">Download weights</a></td>
+              <td><a href="https://github.com/astromer-science/weights/raw/nightly/macho_0.zip">Download</a></td>
             </tr>
             <tr>
               <th scope="row">v1</th>
               <td>MACHO</td>
               <td>New implementation of the paper's model</td>
               <td>0.173/0.72</td>
-              <td><a href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download weights</a></td>
+              <td><a href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download</a></td>
             </tr>
             <tr>
               <th scope="row">v1c(*)</th>
               <td>MACHO Clean</td>
               <td>Paper's model</td>
               <td>0.064/0.83</td>
-              <td><a href="https://github.com/astromer-science/weights/raw/nightly/macho_1c.zip">Download weights</a></td>
+              <td><a href="https://github.com/astromer-science/weights/raw/nightly/macho_1c.zip">Download</a></td>
             </tr>
           </tbody>
         </table>
@@ -67,8 +72,7 @@
                 <br>
                 <strong>Test R-Square:</strong> 0.80
                 <br>
-                <strong>Link:</strong> <a href="https://github.com/astromer-science/weights/raw/nightly/macho_0.zip">Download
-                  weights</a>
+                <strong>Link:</strong> <a href="https://github.com/astromer-science/weights/raw/nightly/macho_0.zip">Download</a>
               </div>
             </div>
           </div>
@@ -87,8 +91,7 @@
                 <br>
                 <strong>Test R-Square:</strong> 0.72
                 <br>
-                <strong>Link:</strong> <a href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download
-                  weights</a>
+                <strong>Link:</strong> <a href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download</a>
               </div>
             </div>
           </div>
@@ -107,8 +110,7 @@
                 <br>
                 <strong>Test R-Square:</strong> 0.83
                 <br>
-                <strong>Link:</strong> <a href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download
-                  weights</a>
+                <strong>Link:</strong> <a href="https://github.com/astromer-science/weights/raw/nightly/macho_1.zip">Download</a>
               </div>
             </div>
           </div>
