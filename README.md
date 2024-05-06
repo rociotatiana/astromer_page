@@ -1,4 +1,4 @@
-### Clonar el repositorio
+### Clone the repository
 
 --> Clone the repository writing the following code :
 ```bash
@@ -19,7 +19,7 @@ Install Flask
 pip install Flask
 ```
 
-#
+
 
 ### Run the app
 
@@ -29,5 +29,5 @@ python3 main.py run
 
 ```
 
-> ⚠ El server se activará en http://127.0.0.1:8000/
+> ⚠ The server will activate in http://127.0.0.1:5000/
 
