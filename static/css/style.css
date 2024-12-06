@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Kumbh Sans",sans-serif;
+  font-family: "Roboto", sans-serif;
 
 }
 
@@ -89,7 +89,7 @@ h1 {
 
 
 p {
-  color: #404c58;
+  color: #2e363f;
   font-size: 20px;
   line-height: 2rem;
   text-align: center;
@@ -204,7 +204,8 @@ button:hover {
 /* NAVBAR */
 
 nav {
-  font-size: 18px;
+  font-size: 19px;
+  font-weight: medium;
 }
 
 .nav-link {
@@ -247,7 +248,7 @@ HOME INITIAL BOX
 
 .mx-auto{
   display: flex;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .space2 {
