@@ -2,8 +2,8 @@
 :root {
   --first-base-color: #f3f3f3;
   --second-base-color: whitesmoke;
-  --pop-color: #a61c30;
-  --action-color: #ff0000;
+  --pop-color: #570202;
+  --action-color: #a61c30;
 }
 * {
   box-sizing: border-box;
@@ -45,11 +45,10 @@ footer {
 }
 
 .top-bar {
-  background: url('/static/img/banner.png') center;
+  background: url('../img/banner1.png') center;
   margin: 0px 0px 20px 0px;
   padding: 15px;
   text-align: center;
-
 }
 
 h1,
@@ -181,11 +180,11 @@ li {
 
 a:hover {
 
-  color: #ff0000;
+  color: var(--action-color);
 }
 
 button:hover {
-  background-color: #ff0000;
+  background-color: var(--action-color);
 
 }
 
@@ -194,8 +193,8 @@ button:hover {
   font-size: 125%;
   font-weight: 600;
   color: #f3f3f3;
-  background-color: #ff0000;
-  outline-color: #ff0000;
+  background-color: var(--action-color);
+  outline-color: var(--action-color);
   /*background-image: linear-gradient(to top right, #a61c30,#ff0000); */
 
 
@@ -213,7 +212,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #ff0000;
+  color: var(--action-color);
 }
 
 #nav-toggle-btn {
@@ -248,13 +247,13 @@ HOME INITIAL BOX
 
 .mx-auto{
   display: flex;
-  width: 100%;
+  /*width: 100%;*/
   height: auto;
 }
-.space2 {
 
+.space2 {
   /* Pass a comma separated list of backgrounds: */
-  background: url('/static/img/galaxy.jpg') repeat bottom right;
+  background: url('../img/galaxy.jpg') repeat bottom right;
 
   width: 500px;
   height: 500px;
